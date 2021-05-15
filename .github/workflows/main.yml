@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
-      - uses: DieYiSu/Ghost_blog_github_actions
+      - uses: TryGhost/action-deploy-theme@v1.4.1
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
